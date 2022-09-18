@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #block1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding-left: 50px ;
+            padding-right: 50px;
+        }
+        .logo{
+            height:25px;
+            width: 20px;
+        }
+        #link a{
+            text-decoration: none;
+            color: black;
+        }
+        #block2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 45px ;
+            padding-right: 50px;
+            padding-top: 10px ;
+            padding-bottom: 20px;
+        }
+        .logo2{
+            height:45px;
+            width: 45px;
+        }
+        .logo3{
+            height:30px;
+            width: 30px;
+            margin: 5px;
+        }
+        #link2 a{
+            text-decoration: none;
+            color:black;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: large;
+            padding-left: 5px;
+        }
+        #schear {
+            display: flex;
+            
+        }
+        #search {
+            height: 30px;
+            border-radius: 15px;
+            font-size: large;
+        }
+        #block3 h4,h5{
+            display: flex;
+            align-items: center;
+            flex-direction: column; 
+            margin: 0px;
+            background-color: #f5f5f5;
+        }
+        #image{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        #image img{
+            width: 32%;
+            border-radius: 20px;
+        }
+        #txt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .size {
+            font-size: 60px;
+            font-weight: bold;
+        }
+        #txt p,h1{
+            margin: 0px;
+        }
+        #txt button{
+            border-radius: 15px;
+            margin-top: 15px;
+            font-size: 15px;
+            background-color: black;
+            color: white;
+        }
+       #image2 {
+           padding: 20px;
+       }
+       #photo {
+           display: flex;
+           justify-content: space-between;
+            padding: 10px;
+       }
+       #last{
+           background-color: black;
+           color: white;
+       }
+       #last1{
+        display: flex;
+           justify-content: space-between;
+       }
+       ::-webkit-scrollbar{
+    width: 0;
+}
+#scroll{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+#bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,100%{
+        filter:hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+#bar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    filter: blur(10px);
+}
+#bar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    filter: blur(30px);
+}
+    </style>
+    <title>faltu bazar</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div id="bar"></div>
+    <div id="scroll"></div>
+    <div id="block1">
+        <div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png"
+        class="logo"
+        />
+    </div>
+        <div id="link">
+            <a href="">Help |</a>
+            <a href="">Join Us |</a>
+            <a href="">Sign in</a>
+        </div>
+    </div>
+    <div id="block2">   
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ0fBZ_dOTeXCnxPVHw0yA3zKgJo31RO1ezg&usqp=CAU"
+        class="logo2">
+        <div id="link2">
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">Kids</a>
+            <a href="">Customise</a>
+            <a href="">Sale</a>
+            <a href="">SNKRS</a>
+        </div>
+        <div id="schear">
+            <input type="text" id="search" placeholder="search">
+            <img src="https://cdn-icons.flaticon.com/png/128/707/premium/707680.png?token=exp=1653206999~hmac=5cddd459ac8cef61f00aa876cec6ee1f" class="logo3">
+            <img src="https://cdn-icons-png.flaticon.com/128/1656/1656850.png" class="logo3">
+        </div>
+    </div>
+    <div id="block3">
+        <h4>Free Delivery</h4>
+        <h5>It's taking us a bit longer than usual to get your order to you. Thank you for your patience</h5>
+    </div>
+    <div id="image">
+        <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_700,c_limit/6c109115-5da2-4801-9321-dd9483790657/men-s-shoes-clothing-accessories.png">
+        <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_700,c_limit/d61353d0-0b3e-4bff-b980-53909a13eff7/men-s-shoes-clothing-accessories.png">
+        <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_700,c_limit/d87e3748-c703-4369-a201-75c4c31656e3/men-s-shoes-clothing-accessories.png">
+    </div>
+    <div id="txt">
+        <p>the ACG guide to</p>
+        <h1 class="size">FIND YOUR OUTDOOR ADVANTURE</h1>
+        <p>get hocked on the feeling of summer.wheather yor are in search of relaxation or discovery.</p>
+        <button>Shop</button>
+    </div>
+    <div id="image2">
+        <h2>The Latest</h2>
+        <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1253,c_limit/37231de6-7ba3-4a30-bd5c-029135251935/men-s-shoes-clothing-accessories.jpg">
+    </div> 
+    <h2>Featured</h2> 
+    <div id="image">
+        <img src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/w_411,c_limit/341e2ed9-9797-4f15-8d4f-265071377068/air-force-1-07-lv8-shoes-BS9f21.png">
+        <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_700,c_limit/fd384f86-1ed1-4bbf-a786-9ee17969aa9d/men-s-shoes-clothing-accessories.png">
+        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/804cc26e-36f4-40ca-9649-98965708951e/heritage86-washed-golf-hat-ZRvzwr.png">
+        </div>
+        <div id="photo">
+            <div>
+                <h2>Nike Air Force 1 '07 LV8</h2>
+                <h4>Men's Shoes</h4>
+            </div>
+            <div>
+                <h2>PG 6 EP</h2>
+                <h4>Basketball Shoes</h4>
+            </div>
+            <div>
+                <h2>Nike Heritage86</h2>
+                <h4>Washed Golf Hat</h4>
+            </div>
+        </div>
+        <div id="last">
+        <div id="last1">
+            <h3>FIND A STORE</h3>
+            <H3>GET HELP</H3>
+            <H3>ABOUT NIKE</H3>
+        </div>
+        <div>
+            <h3>BECOME A MEMBER</h3>
+            <h3>SIGN UP</h3>
+            <h3>STUDENT DISCOUNT</h3>
+            <h3>SEND US FEEDBACK</h3>
+        </div>
+    </div>
+    <div>
+        <i>Have a Nike Day</i>
+        <i>Thanks for shopping dear</i>
+    </div>
+    <script>
+        let progress=document.getElementById('bar');
+        let totalHeight=document.body.scrollHeight-window.innerHeight;
+        window.onscroll=function(){
+            let progressHeight=(window.pageYOffset/totalHeight)*100;
+            progress.style.height= progressHeight+"%";
+        }
+    </script>
+</body>
+</html>
